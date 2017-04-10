@@ -1,7 +1,4 @@
 language: java
 
-install:
-  - apt-get install maven
-
 script:
   - mvn clean test
