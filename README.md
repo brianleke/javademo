@@ -1,4 +1,4 @@
-Demo project for Java Mvn Build
+JAVA PROJECT DEMONSTRATING MAVEN WITH TRAVIS AND COVERALLS INTEGRATION
 
 Build Status: [![Build Status](https://www.travis-ci.org/brianleke/javademo.svg?branch=master)](https://www.travis-ci.org/brianleke/javademo)
 
