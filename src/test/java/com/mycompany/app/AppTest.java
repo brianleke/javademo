@@ -39,4 +39,10 @@ public class AppTest
     public void testStandardString(){
         assertEquals(App.getsStandardString(), "Standard String");
     }
+
+    public void testAppIsTheSame(){
+        App application = new App();
+        App anotherApplication = new App();
+        assertEquals(application.getClass(), anotherApplication.getClass());
+    }
 }
