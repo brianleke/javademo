@@ -1,5 +1,5 @@
 
-# JAVA PROJECT DEMONSTRATING MAVEN WITH TRAVIS AND COVERALLS INTEGRATION
+# Java Project Demonstrating Maven With Travic CI And Coveralls Integration
 
 This project demonstrates how a typical **Java Mvn project** is structured together with the unit tests using the **JUnit 4.12** framework together with the **Harmcrest matchers**. For CI the project uses [TravisCI](https://www.travis-ci.org/brianleke/javademo "Travis CI Build For Project") and exports the coverage report to [Coveralls](https://coveralls.io/github/brianleke/javademo?branch=master "Coverage Metrics For Project").
 
