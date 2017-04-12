@@ -46,3 +46,4 @@ public class AppTest
         assertEquals(application.getClass(), anotherApplication.getClass());
     }
 }
+
