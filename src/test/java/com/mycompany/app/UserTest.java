@@ -46,5 +46,42 @@ public class UserTest
         User anotherUser = new User("anotherFirstName", "lastName");
         assertThat(user, is(not(equalTo(anotherUser))));
     }
+    public void testShouldKnowTwoUsersAreNotTheSameIfTheyHaveDifferentLastNames(){
+        User user = new User("firstName", "lastName");
+        User anotherUser = new User("firstName", "anotherLastName");
+        assertThat(user, is(not(equalTo(anotherUser))));
+    }
+
+    public void testShouldKnowTwoUsersWithTheSameFirstNameAndLastNameAreEqual(){
+        User user = new User("firstName", "lastName");
+        User anotherUser = new User("firstName", "lastName");
+
+        assertThat(user, is(equalTo(anotherUser)));
+    }
+
+    public void testShouldKnowThatTheHashCodesOfTheTwoUsersWithSameAttributesIsEqual(){
+        User user = new User("firstName", "lastName");
+        User anotherUser = new User("firstName", "lastName");
+
+        assertEquals(user.hashCode(), anotherUser.hashCode());
+    }
+
+    public void testShouldKnowThatTheSameUserIsEqualToItself(){
+        User user = new User("firstName", "lastName");
+
+        assertThat(user, is(equalTo(user)));
+    }
+
+    public void testShouldKnowThatTheSameUserIsNotEqualToNullObject(){
+        User user = new User("firstName", "lastName");
+
+        assertThat(user, is(not(equalTo(null))));
+    }
+
+    public void testShouldKnowThatTheSameUserIsNotEqualToAnotherObjectType(){
+        User user = new User("firstName", "lastName");
+
+        assertThat(user, is(not(equalTo(new Object()))));
+    }
 }
 
